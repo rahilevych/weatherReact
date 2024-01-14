@@ -1,0 +1,27 @@
+html {
+  font-size: 16px;
+}
+
+.timecomponent__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.timecomponent__container p {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 10px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=TimeComponent.css.map */

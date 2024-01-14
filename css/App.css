@@ -1,0 +1,4 @@
+body {
+  background: -webkit-gradient(linear, right top, left top, color-stop(9.23%, #d1c7c3), color-stop(97.36%, #c2b6af));
+  background: linear-gradient(270deg, #d1c7c3 9.23%, #c2b6af 97.36%);
+}/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,68 @@
+$font-family: "Roboto", sans-serif;
+$color: white;
+html {
+    font-size: 16px;
+}
+.weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    &__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: start;
+        height: auto;
+    }
+    &__city {
+        color: $color;
+        font-family: $font-family;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+    }
+    &__temp {
+        color: $color;
+        font-family: $font-family;
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 25px;
+        margin-top: 0.5rem;
+    }
+    &__search {
+        height: 1.5rem;
+        display: flex;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        background: linear-gradient(220deg, rgba(173, 163, 158, 0.6) -11.17%, rgba(127, 108, 99, 0.6) 161.13%);
+        border-radius: 50px;
+        border: 1px solid white;
+        align-items: center;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        input {
+            width: 0;
+            outline: none;
+            border: none;
+            font-weight: 500;
+            transition: 1s;
+            background: transparent;
+            color: $color;
+            font-family: $font-family;
+            font-weight: 300;
+        }
+        a {
+            i {
+                color: #35231f;
+                font-size: 18px;
+            }
+        }
+    }
+    &__search:hover {
+        input {
+            width: 12rem;
+        }
+    }
+}

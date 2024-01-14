@@ -1,0 +1,17 @@
+html {
+    font-size: 16px;
+}
+.forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    margin: 5rem auto;
+    width: 45%;
+    height: 500px;
+    border-radius: 46.473px;
+    border: 1.5px solid #fff;
+    background: linear-gradient(220deg, rgba(173, 163, 158, 0.6) -11.17%, rgba(127, 108, 99, 0.6) 161.13%);
+    backdrop-filter: blur(32px);
+    padding: 2rem;
+}
