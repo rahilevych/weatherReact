@@ -1,22 +1,19 @@
 import { useState } from 'react';
-import HoursWeather from '../hours_weather/HoursWeather';
-import WeatherData from '../weather_data/WeatherData';
-import WeekWeather from '../week_weather/WeekWeather';
+import SearchComponent from '../search/SearchComponet';
+import DayDataComponent from '../day_data/DayDataComponent';
 import './Forecast.scss';
-import TimeComponent from '../time_forecast/TimeComponent';
 const Forecast = () => {
-  const apiKey = 'd167c68a5b7f42baa4b85238231901 ';
+  const apiKey = 'c37558554d0b48969d1231457242802';
   const [selectedCity, setSelectedCity] = useState('');
 
-  const handleCityChange = (city) => {
+  const handleSearch = (city) => {
     setSelectedCity(city);
   };
 
   return (
     <div className='forecast'>
-      <WeatherData apiKey={apiKey} onCityChange={handleCityChange} />
-      <HoursWeather apiKey={apiKey} city={selectedCity} />
-      <WeekWeather apiKey={apiKey} city={selectedCity} />
+      <SearchComponent onSearch={handleSearch} />
+      <DayDataComponent city={selectedCity} apiKey={apiKey} />
     </div>
   );
 };
