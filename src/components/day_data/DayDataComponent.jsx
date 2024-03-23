@@ -9,7 +9,7 @@ const DayDataComponent = ({ city, apiKey }) => {
     const fetchWeatherData = async () => {
       try {
         const response = await axios.get(
-          `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`
+          `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`
         );
         if (response.status === 200) {
           setWeatherData(response.data);
@@ -44,7 +44,7 @@ const DayDataComponent = ({ city, apiKey }) => {
           <div className='weather__add'>
             <div className='weather__humidity'>
               <div className='weather__img'>
-                <i class='fa-solid fa-water'></i>
+                <i className='fa-solid fa-water'></i>
               </div>
               <div className='weather__info'>
                 <p className='weather__measure'>
@@ -55,7 +55,7 @@ const DayDataComponent = ({ city, apiKey }) => {
             </div>
             <div className='weather__wind'>
               <div className='weather__img'>
-                <i class='fa-solid fa-wind'></i>
+                <i className='fa-solid fa-wind'></i>
               </div>
               <div className='weather__info'>
                 <p className='weather__measure'>

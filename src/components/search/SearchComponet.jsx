@@ -17,7 +17,7 @@ const SearchComponent = ({ onSearch }) => {
   };
   return (
     <div className='search'>
-      <i class='fa-solid fa-location-dot'></i>
+      <i className='fa-solid fa-location-dot'></i>
       <input
         type='text'
         placeholder='Enter your location'
